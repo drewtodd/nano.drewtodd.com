@@ -1,6 +1,12 @@
+<!--#set var="PrevLink" value="/template/index.shtml" -->
 <!--#set var="PageTitle" value="Vanderhelm: A NaNoWriMo Novel by Andrew Todd" -->
-<!--#include virtual="../inc/header.html" -->
+<!--#include virtual="/inc/header.html" -->
 <div id="content">
-	<blockquote class="epigraph">All <a href="/template#anchor">fear</a> the blank page.</blockquote>
+	<!--#include virtual="/chapter1/chapter1.html"-->
+	<div class="nav-pages">
+		<div class="column nav-prev"><a href="<!--#echo var="PrevLink"-->">Previous Entry</a></div>
+		<div class="column nav-page-number"><a href="#">1</a></div>
+		<div class="column nav-next"><a href="/chapter1/">Start from the Beginning</a></div>
+	</div>
 </div>
-<!--#include virtual="../inc/footer.html" -->
+<!--#include virtual="/inc/footer.html" -->
