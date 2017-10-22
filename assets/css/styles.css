@@ -54,6 +54,7 @@ ul#nav {
 	padding: 0;
 	padding-left: 8em;
 	padding-right: 5em;
+	padding-top: 2em;
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 	box-shadow: -3em 0 5em -.75em rgba(225, 225, 225, .5);
@@ -66,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.chapter {
 	margin: 3em 0 3em 0;
-	padding-top: 2em;
 	text-align: center;
 	color: #666;
 	font-weight: normal;
@@ -103,6 +103,13 @@ blockquote {
 	background-color: #f8f8f8;
 	clear: both;
 	display: block;
+}
+
+blockquote.epigraph {
+	text-align: center;
+	font-style: italic;
+	border: none;
+	background-color: #fcfcfc;
 }
 
 blockquote.emma {
