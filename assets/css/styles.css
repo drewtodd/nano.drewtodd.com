@@ -1,3 +1,8 @@
+/* 
+Pulpish CSS by Andrew Todd 
+https://github.com/drewtodd | @drwtod
+*/
+
 body {
 	font-family: Lora, Georgia, serif;
 	font-size: 16px;
@@ -13,6 +18,19 @@ body {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid #e8e8e8;
+}
+
+#footer {
+	display: block;
+	overflow: hidden;
+	background-color: #f8f8f8;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	border-top: 1px solid #e8e8e8;
+	text-align: center;
 }
 	
 ul#nav {
@@ -40,7 +58,7 @@ ul#nav {
 
 #nav a {
 	text-decoration: none;
-	color: inherit;
+	color: #5b3d1e;
     line-height: 1.25em;
 }
 
@@ -48,9 +66,12 @@ ul#nav {
 	border-bottom: 1px dotted #999;
 }
 
+#nav a:visited {
+	color: #5b3d1e;
+}
+
 #content {
 	display: block;
-	overflow: hidden;
 	width: 480px;
 	margin: 0 auto;
 	padding: 0;
@@ -79,7 +100,14 @@ p {
 	font-weight: 400;
 }
 
-p:first-of-type:first-letter {
+#footer p {
+	width: 480px;
+	margin: 0 auto;
+	font-size: .55em;
+	color: #636363;
+}
+
+#content p:first-of-type:first-letter {
 	float: left;
 	line-height: 1em;
 	font-size: 6em;
@@ -89,11 +117,11 @@ p:first-of-type:first-letter {
 }
 
 a {
-	color: #69c;
+	color: #963;
 }
 
 a:visited {
-	color: #369;
+	color: #5b3d1e;
 }
 
 blockquote {
@@ -117,6 +145,7 @@ blockquote.epigraph {
 blockquote.emma {
 	font-family: Caveat, sans-serif;
 	font-size: 1.5rem;
+	color: #39150e;
 }
 
 blockquote.robert {
@@ -193,39 +222,55 @@ img.straight:nth-child(even), img.straight:nth-child(odd), blockquote.emma:nth-c
 	transform: rotate(0deg);
 }
 
-ul.nav-page {
+div.nav-pages {
 	display: block;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 4em;
 	margin-top: 4em;
+	padding-bottom: 6em;
 } 
 
-li.nav-next {
+div.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+div.nave-pages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+div.nav-next {
 	display: inline;
-	float: right;
-	list-style: none;
 	text-align: right;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 4em;
 }
 
-li.nav-next::after {
+div.nav-next::after {
 	content: " ❧";
+	color: #996633;
 }
 
-li.nav-prev::before {
-	content: "☙ ";
-	font-size: 1.25em;
-}
-
-li.nav-prev {
+div.nav-page-number {
 	display: inline;
-	float: left;
-	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+div.nav-prev {
+	display: inline;
 	text-align: left;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 4em;
+}
+
+div.nav-prev::before {
+	content: "☙ ";
+	font-size: 1.25em;
+	color: #996633;
 }
