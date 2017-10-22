@@ -1,3 +1,4 @@
+<!--#set var="PageTitle" value="Vanderhelm: A NaNoWriMo Novel by Andrew Todd" -->
 <!--#include virtual="../inc/header.html" -->
 <div id="content">
 	<blockquote class="epigraph">All <a href="/template#anchor">fear</a> the blank page.</blockquote>

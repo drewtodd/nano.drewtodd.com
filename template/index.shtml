@@ -1,3 +1,4 @@
+<!--#set var="PageTitle" value="Template" -->
 <!--#include virtual="../inc/header.html" -->
 <div id="content">
 	<h1 class="chapter">Chapter 1</h1>
