@@ -49,6 +49,8 @@ ul#nav {
 }
 
 #content {
+	display: block;
+	overflow: hidden;
 	width: 480px;
 	margin: 0 auto;
 	padding: 0;
@@ -189,4 +191,41 @@ img.noborder {
 
 img.straight:nth-child(even), img.straight:nth-child(odd), blockquote.emma:nth-child(even), blockquote.emma:nth-child(odd) {
 	transform: rotate(0deg);
+}
+
+ul.nav-page {
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 4em;
+	margin-top: 4em;
+} 
+
+li.nav-next {
+	display: inline;
+	float: right;
+	list-style: none;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 4em;
+}
+
+li.nav-next::after {
+	content: " ❧";
+}
+
+li.nav-prev::before {
+	content: "☙ ";
+	font-size: 1.25em;
+}
+
+li.nav-prev {
+	display: inline;
+	float: left;
+	list-style: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 4em;
 }

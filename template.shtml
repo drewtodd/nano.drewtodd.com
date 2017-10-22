@@ -1,5 +1,4 @@
-<!--#include file="header.html" -->
-
+<!--#include virtual="header.html" -->
 <div id="content">
 	<h1 class="chapter">Chapter 1</h1>
 
@@ -166,6 +165,10 @@
 	<blockquote><p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you&#8217;d like to hear it I can sing it for you.</p>
 	<p><cite>— <a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></p></blockquote>
 	<p>And here&#8217;s a bit of trailing text.</p>
+	<ul class="nav-page">
+		<li class="nav-prev"><a href="#">Previous</a></li>
+		<li class="nav-next"><a href="#">Next</a></li>
+	</ul>
 </div>
 <script src="js/scripts.js"></script>
 </body>
