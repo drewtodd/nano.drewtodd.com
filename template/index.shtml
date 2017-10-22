@@ -1,4 +1,4 @@
-<!--#include virtual="header.html" -->
+<!--#include virtual="../inc/header.html" -->
 <div id="content">
 	<h1 class="chapter">Chapter 1</h1>
 
@@ -11,7 +11,7 @@
 	
 	<p><!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" --></p>
 
-	<img src="assets/img/map.png" class="full straight"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<img src="../assets/img/map.png" class="full straight"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -20,7 +20,7 @@
 
 	<h2>Header 2</h2>
 
-	<img src="assets/img/quill.jpg" class="right"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<img src="../assets/img/quill.jpg" class="right"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -45,7 +45,7 @@
 	</blockquote>
 
 	<!-- <img src="seal.png" class="right noborder straight"> -->
-	<img src="assets/img/jerod.jpg" class="right" title="Jerod, in better days.">
+	<img src="../assets/img/jerod.jpg" class="right" title="Jerod, in better days.">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -171,4 +171,4 @@
 		<div class="column nav-next"><a href="#">Next</a></div>
 	</div>
 </div>
-<!--#include virtual="footer.html"-->
+<!--#include virtual="../inc/footer.html"-->
