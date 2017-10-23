@@ -90,9 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h1.chapter {
 	margin: 3em 0 3em 0;
+	font-size: 2em;
 	text-align: center;
-	color: #666;
-	font-weight: normal;
 }
 
 p {
@@ -103,6 +102,8 @@ p {
 #footer p {
 	width: 480px;
 	margin: 0 auto;
+	padding-left: 8em;
+	padding-right: 5em;
 	font-size: .55em;
 	color: #636363;
 }
@@ -222,7 +223,7 @@ img.straight:nth-child(even), img.straight:nth-child(odd), blockquote.emma:nth-c
 	transform: rotate(0deg);
 }
 
-div.nav-pages {
+.nav-pages {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -231,19 +232,19 @@ div.nav-pages {
 	font-size: .8em;
 } 
 
-div.column {
+.column {
     float: left;
 }
 
 /* Clear floats after the columns */
-div.nave-pages:after {
+.nave-pages:after {
     content: "";
     display: table;
     clear: both;
 }
 
 
-div.nav-next {
+.nav-next {
 	display: inline;
 	text-align: right;
 	padding: 0;
@@ -251,12 +252,12 @@ div.nav-next {
 	width: 35%;
 }
 
-div.nav-next::after {
+.nav-next::after {
 	content: " ❧";
 	color: #996633;
 }
 
-div.nav-page-number {
+.nav-page-number {
 	display: inline;
 	text-align: center;
 	padding: 0;
@@ -264,7 +265,7 @@ div.nav-page-number {
 	width: 30%;
 }
 
-div.nav-prev {
+.nav-prev {
 	display: inline;
 	text-align: left;
 	padding: 0;
@@ -272,8 +273,26 @@ div.nav-prev {
 	width: 35%;
 }
 
-div.nav-prev::before {
+.nav-prev::before {
 	content: "☙ ";
 	font-size: 1.25em;
 	color: #996633;
 }
+
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+a.skip:active, a.skip:focus, a.skip:hover {
+        left: 0; 
+        top: 0;
+        width: auto; 
+        height: auto; 
+        overflow: visible; 
+    }
