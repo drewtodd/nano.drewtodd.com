@@ -248,7 +248,7 @@ div.nav-next {
 	text-align: right;
 	padding: 0;
 	margin: 0;
-	width: 45%;
+	width: 35%;
 }
 
 div.nav-next::after {
@@ -261,7 +261,7 @@ div.nav-page-number {
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	width: 10%;
+	width: 30%;
 }
 
 div.nav-prev {
@@ -269,7 +269,7 @@ div.nav-prev {
 	text-align: left;
 	padding: 0;
 	margin: 0;
-	width: 45%;
+	width: 35%;
 }
 
 div.nav-prev::before {
