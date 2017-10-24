@@ -4,11 +4,11 @@
 
 <article id="content">
 <!--#include virtual="/chapter1/chapter1.html"-->
-	<div class="nav-pages">
+	<nav class="nav-pages">
 		<div class="column nav-prev"><a href="<!--#echo var="PrevLink"-->">Previous Entry</a></div>
-		<div class="column nav-page-number"><a href="/contents/#ch1">Chapter 1</a></div>
+		<div class="column nav-page-number"><a href="/contents/#chapter1">Chapter 1</a></div>
 		<div class="column nav-next"><a href="/chapter1/">Start from the Beginning</a></div>
-	</div>
+	</nav>
 </article>
 
 <!--#include virtual="/inc/footer.html" -->
