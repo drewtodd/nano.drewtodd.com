@@ -125,6 +125,10 @@ a:visited {
 	color: #5b3d1e;
 }
 
+pre {
+	overflow-x: auto;
+}
+
 blockquote {
 	margin: 0 0 0.5em 0;
 	padding: .5em 0 .5em .5em;
@@ -296,3 +300,60 @@ a.skip:active, a.skip:focus, a.skip:hover {
         height: auto; 
         overflow: visible; 
     }
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		font-size: 2rem;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#content {
+		width: 80%;
+		padding: 1em;
+		border: 0;
+		box-shadow: none;
+		margin: 0 auto;
+	}
+	
+	#header {
+		width: 100%;
+		padding: 0;
+	}
+	
+	img, 
+	img.right, 
+	img.left, 
+	img.center, 
+	img.full, 
+	img.right:nth-child(even), 
+	img.left:nth-child(even), 
+	img.center:nth-child(even),
+	img.right:nth-child(odd), 
+	img.left:nth-child(odd), 
+	img.center:nth-child(odd), 
+	img.full:nth-child(odd), 
+	img.full:nth-child(even)
+	{
+		display: block;
+		margin: 0;
+		padding: 0;
+		float: none;
+		border: none;
+		background-color: #fff;
+		box-shadow: none;
+		transform: rotate(0deg);
+	}
+	
+/*	ul#nav {
+		width: 100%;
+	}
+	
+	#nav li{
+		width: 33%;
+		padding: .5em;
+		margin: 0;
+	}
+
+*/
+}
