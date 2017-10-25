@@ -208,3 +208,140 @@ a.skip:active, a.skip:focus, a.skip:hover {
         height: auto; 
         overflow: visible; 
     }
+
+
+@media (min-width: 600px) {
+	body {
+
+	}
+	
+	/* Override global padding */
+	h1, h2, h3, h4, h5, h6, p, blockquote {
+		padding: 0;
+	}
+	
+	ul#nav {
+		display: block;
+		width: 480px;
+		margin: 0 auto;
+		padding: 0;
+		padding-left: 4em;
+		list-style-type: none;
+		text-align: right;
+	}
+
+	#nav li{
+		display: inline-block;
+		width: 72px;
+		text-align: center;
+		padding: .5em;
+		margin: 0;
+	}
+
+	#nav li:hover {
+		background-color: #e8e8e8;
+		cursor: pointer;
+	}
+
+	#nav a {
+		text-decoration: none;
+		color: #5b3d1e;
+		line-height: 1.25em;
+	}
+
+	#nav a:hover {
+		border-bottom: 1px dotted #999;
+	}
+
+	#nav a:visited {
+		color: #5b3d1e;
+	}
+
+	#content {
+		width: 480px;
+		margin: 0 auto;
+		padding: 0;
+		padding-left: 8em;
+		padding-right: 5em;
+		padding-top: 2em;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		box-shadow: -3em 0 5em -.75em rgba(225, 225, 225, .5);
+	}
+	
+	#footer p {
+		width: 480px;
+		margin: 0 auto;
+		padding-left: 8em;
+		padding-right: 5em;
+	}
+	
+	blockquote {
+		max-width: auto;
+		width: 100%;
+		margin: 0 0 0.5em 0;
+		padding: .5em 0 .5em .5em;
+	}
+
+	img {
+		width: auto;
+		max-width: 320px;
+		max-height: 320px;
+		padding: 1em;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		box-shadow: 0 0 1em .125em #f0f0f0;
+	}
+
+	img.right {
+		position: relative;
+		float: right;
+		margin: 1em -160px 1em 1em;
+	}
+
+	img.left {
+		position: relative;
+		float: left;
+		margin: 1em 1.5em 1em -160px;
+	}
+
+	img.center {
+		position: relative;
+		display: block;
+		margin: 2em auto;
+	}
+
+	img.full {
+		position: relative;
+		display: block;
+		margin: 0 0 0 -1em;
+		max-width: 480px;
+	}
+
+	img.right:nth-child(even), img.left:nth-child(even), img.center:nth-child(even) {
+		transform: rotate(-2deg);
+	}
+
+	img.right:nth-child(odd), img.left:nth-child(odd), img.center:nth-child(odd) {
+		transform: rotate(4deg);
+	}
+
+	img.full:nth-child(odd), blockquote.emma:nth-child(odd) {
+		transform: rotate(.75deg);
+	}
+
+	img.full:nth-child(even), blockquote.emma:nth-child(even) {
+		transform: rotate(-.5deg);
+	}
+
+	img.noborder {
+		border: none;
+		box-shadow: none;
+	}
+
+	img.straight:nth-child(even), img.straight:nth-child(odd), blockquote.emma:nth-child(even), blockquote.emma:nth-child(odd) {
+		transform: rotate(0deg);
+	}
+
+
+}
