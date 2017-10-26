@@ -304,6 +304,11 @@ a.skip:active, a.skip:focus, a.skip:hover {
 		background-color: #fff;
 		box-shadow: 0 0 1em .125em #f0f0f0;
 	}
+	
+	img.small {
+		max-width: 240px;
+		max-height: 240px;
+	}
 
 	img.right {
 		position: relative;
