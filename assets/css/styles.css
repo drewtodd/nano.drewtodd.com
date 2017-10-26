@@ -211,8 +211,7 @@ a.skip:active, a.skip:focus, a.skip:hover {
 
 
 @media (min-width: 600px) {
-	body {
-
+	body, html {
 	}
 	
 	/* Override global padding */
@@ -259,11 +258,12 @@ a.skip:active, a.skip:focus, a.skip:hover {
 
 	#content {
 		width: 480px;
+		min-height: 100%;
 		margin: 0 auto;
-		padding: 0;
 		padding-left: 8em;
 		padding-right: 5em;
 		padding-top: 2em;
+		padding-bottom: 2em;
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 		box-shadow: -3em 0 5em -.75em rgba(225, 225, 225, .5);
