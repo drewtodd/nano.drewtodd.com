@@ -56,6 +56,14 @@ h1, h1.chapter {
 	text-align: center;
 }
 
+h3 a {
+	text-decoration: none;
+}
+
+h3 a:hover {
+	border-bottom: 1px dotted;
+}
+
 p {
 	line-height: 2em;
 	font-weight: 400;
@@ -78,6 +86,11 @@ p {
 
 a {
 	color: #963;
+	text-decoration: none;
+}
+
+p a, blockquote a {
+	border-bottom: 1px dotted #963;
 }
 
 a:visited {
@@ -243,7 +256,6 @@ a.skip:active, a.skip:focus, a.skip:hover {
 	}
 
 	#nav a {
-		text-decoration: none;
 		color: #5b3d1e;
 		line-height: 1.25em;
 	}
