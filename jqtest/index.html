@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$( document ).ready(function() {
+			console.log( "ready!" );
+			$( "#headerContainer" ).load( "/inc/header.html" );
+			$( "#footerContainer" ).load( "/inc/footer.html" );
+		});
+	</script>
+	
+	<div id="headerContainer"></div>
+	
+	<h1>JQuery Test</h1>
+	
+	<p>Some content...</p>
+	
+	<div id="footerContainer"></div>
+</body>
+</html>
